@@ -77,7 +77,23 @@
   </style>
 </head>
 <body>
-
+<!-- Meta Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '593198231724946');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=593198231724946&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
 <div class="container">
 <div class="black">
 <div id="primeira">
@@ -93,6 +109,16 @@
 <div id="segunda" class="hide">
 <div class="question">
 <h1>Pergunta 2</h1>
+<p>Compartilhe apenas com quem realmente precise saber disso. Ok?</p>
+</div>
+<div class="answer">
+<button class="btn" onclick="terceira()">SIM</button>
+<button class="btn" onclick="terceira()">NÃO</button>
+</div>
+</div>
+<div id="terceira" class="hide">
+<div class="question">
+<h1>Pergunta 3</h1>
 <p>A apresentação a seguir tem disponibilidade a um pequeno número de pessoas ao mesmo tempo... Você pretende ver até o fim?</p>
 </div>
 <div class="answer">
@@ -113,7 +139,7 @@
       document.getElementById("terceira").classList.remove("hide")
     }
     function redirect() {
-      location.href = "https://bonsmomentos.online"
+      location.href = "https://ndesaude.online"
     }
   </script>
 </body>
